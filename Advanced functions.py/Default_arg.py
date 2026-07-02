@@ -3,3 +3,4 @@ def greet(name="Guest"):
 
 greet()
 greet("Alice")
+greet("hasna")
