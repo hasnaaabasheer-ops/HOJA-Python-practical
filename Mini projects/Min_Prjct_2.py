@@ -8,7 +8,7 @@ def show_menu():
     print("4. Exit")
 
 def check_balance():
-    global balance
+    
     print("Current Balance:", balance)
 
 def deposit():
@@ -20,27 +20,27 @@ def deposit():
 
 def withdraw():
     global balance
-    amount = int(input("Enter amount to withdraw: "))
+    amount = int(input("enter amount to withdraw :"))
     if amount <= balance:
-        balance -= amount
-        print("Please collect your cash.")
-        print("Current Balance:", balance)
+        balance = balance -amount
+        print("collect your cash.")
+        print("current balance :", balance)
     else:
-        print("Insufficient balance!")
+        print("insufficient balance")
 
 
 while True:
     show_menu()
-    choice = input("Enter your choice (1-4): ")
 
-    if choice == "1":
+    choice = int(input("enter your choice :"))
+    if choice ==1:
         check_balance()
-    elif choice == "2":
+    elif choice ==2:
         deposit()
-    elif choice == "3":
+    elif choice==3:
         withdraw()
-    elif choice == "4":
-        print("Thank you for using the ATM!")
+    elif choice==4:
+        print("Thank you for using this ATM")
         break
     else:
-        print("Invalid choice, please try again.")
+        print('invalid choice')
