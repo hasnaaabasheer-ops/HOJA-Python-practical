@@ -14,7 +14,7 @@ def check_guess(secret_number, guess):
         print("Too high!")
         return False
     else:
-        print("🎉 Correct!")
+        print(" Correct!")
         return True
 
 def play_game():
