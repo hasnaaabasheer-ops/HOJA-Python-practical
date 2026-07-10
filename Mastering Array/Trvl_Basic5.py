@@ -5,4 +5,4 @@ for element in numbers:
     if element > num:
         count += 1
 
-print("Number ",num,"is:",count)
+print("Number ",num,"is: ",count,)
