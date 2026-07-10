@@ -9,7 +9,7 @@ class Animal:
         print("This is ",self.name,". It's a ",self.type,". It Lives in ",self.lives)
 
     def make_sound(self):
-        print(name,"is making",sound)
+        print(self.name,"is making",self.sound)
 
 
 a1 = Animal("Leo","Lion","Forest","grr")
