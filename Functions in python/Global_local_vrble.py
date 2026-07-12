@@ -11,4 +11,4 @@ def display():
     print("\ninside the function ",y)
 display()
 # There will be error because a local variable only works inside a function 
-print("outside the function",y)
+# print("outside the function",y)
